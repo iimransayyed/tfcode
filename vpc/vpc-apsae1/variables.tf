@@ -14,3 +14,7 @@ variable "default_route" {
   description = "Default Route from and to internet"
   default     = "0.0.0.0/0"
 }
+variable "name_prefix" {
+  type    = string
+  default = "514741091671"
+}

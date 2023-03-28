@@ -3,7 +3,7 @@
 module "vpc_staging" {
   source = "../../modules/vpc/"
 
-  environment_name         = "staging"
+  environment_name         = local.vpc_name
   vpc_cidr                 = "10.1.0.0/16"
   additional_tags = {
     Environment = "Staging"
